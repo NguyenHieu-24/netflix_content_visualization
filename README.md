@@ -1,6 +1,6 @@
 <h1 align="center">Netflix Content Visualization</h1>
 <p align="center">
-  An interactive, three-scene exploration of a Netflix titles dataset.
+  An interactive, three scenes exploration of a Netflix titles dataset.
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat-square" alt="Language: JavaScript">
@@ -20,15 +20,12 @@
 ---
 
 # Overview
-
 Explore how the titles in a bundled Netflix dataset differ by **content type**, **genre**, and **listed country**. The project is a browser-based narrative visualization: start with a timeline, compare genre rankings, then explore an interactive world map.
-
 > **Reading the charts:** Counts describe titles recorded in the supplied dataset. They do not measure Netflix production output, the full live catalog, or audience viewing behavior.
 
 ---
 
 # Features
-
 | | Feature | Implementation |
 | :---: | --- | --- |
 | 📈 | Content timeline | Movie and TV Show title counts by year added, plus an overall type breakdown |
@@ -41,9 +38,7 @@ Explore how the titles in a bundled Netflix dataset differ by **content type**, 
 ---
 
 # Quick Start
-
 ## 1. Prepare your environment
-
 - Install **Python 3** or use another local HTTP server.
 - Use a modern browser with internet access for the libraries loaded from CDNs and the map tiles.
 - Download or clone the repository, keeping the `resources/` directory alongside the HTML files.
@@ -51,7 +46,6 @@ Explore how the titles in a bundled Netflix dataset differ by **content type**, 
 No Python packages or Node.js build step are required by the supplied project.
 
 ## 2. Start a local server
-
 Open a terminal in the repository root, where `scene1.html` and `resources/` are located:
 
 ```sh
@@ -71,14 +65,14 @@ Use the **Scene 1 / Scene 2 / Scene 3** links in the interface to move between v
 
 <details>
 <summary><strong>Using Visual Studio Code</strong></summary>
-
-1. Open the repository root in VS Code.
-2. Open **Terminal → New Terminal**.
-3. Run `python -m http.server 8000`.
-4. Open the local URL above in your browser.
+<ol>
+<li>Open the repository root in VS Code.</li>
+<li>Open **Terminal → New Terminal**.</li>
+<li>Run <code>`python -m http.server 8000`</code>.</li>
+<li>Open the local URL above in your browser.</li>
 
 Use an HTTP server instead of opening the HTML files directly with `file://`: the JavaScript loads CSV files with `d3.csv(...)` and the map uses an ES module.
-
+</ol>
 </details>
 
 <details>
@@ -97,7 +91,6 @@ Use an HTTP server instead of opening the HTML files directly with `file://`: th
 ---
 
 # Explore the Scenes
-
 | Scene | What it shows | How to interact |
 | --- | --- | --- |
 | [**Scene 1 · Timeline**](scene1.html) | Counts of Movies and TV Shows by `date_added` year; a pie chart compares the two types. | Hover chart points to see year and count. |
