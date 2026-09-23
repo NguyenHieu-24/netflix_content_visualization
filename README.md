@@ -101,7 +101,7 @@ The [intro page](text.html) presents the project and links into the visualizatio
 
 <details>
 <summary><strong>How the data is interpreted</strong></summary>
-
+  
 - Scene 1 groups records by the year in `date_added`. This is the year a title was added to the dataset's Netflix catalog, not necessarily its `release_year`.
 - Scene 2 reads `listed_in` values from `netflix_titles.csv` to rank categories. A title can contribute to multiple genre categories if its field lists multiple values.
 - Scene 3 uses the cleaned CSV. A title listed with multiple countries can contribute to more than one country's total. Markers need a country match in `geo.csv`.
@@ -112,7 +112,6 @@ The [intro page](text.html) presents the project and links into the visualizatio
 ---
 
 # Architecture
-
 | File | Responsibility |
 | --- | --- |
 | `text.html` | Intro page and local video |
@@ -143,7 +142,6 @@ The CSV row counts above were measured from the supplied files. The repository c
 ---
 
 # Project Files
-
 | Path | Contents |
 | --- | --- |
 | `text.html` | Optional introductory page |
@@ -156,7 +154,6 @@ The CSV row counts above were measured from the supplied files. The repository c
 ---
 
 # Known Issues
-
 **The old README describes Scene 2 as countries and Scene 3 as age ratings.** The supplied HTML and JavaScript implement genre charts in Scene 2 and a country map in Scene 3, as documented above.
 
 <details>
@@ -177,21 +174,18 @@ The CSV row counts above were measured from the supplied files. The repository c
 ---
 
 # Roadmap
-
-- [ ] Align page descriptions with the actual chart definitions.
-- [ ] Standardize D3 versions and remove unused library includes.
-- [ ] Use HTTPS tile URLs and verify hosted map behavior.
-- [ ] Document dataset provenance, cleaning steps, and field limitations.
-- [ ] Add a reproducible smoke check for each scene.
+- Align page descriptions with the actual chart definitions.
+- Standardize D3 versions and remove unused library includes.
+- Use HTTPS tile URLs and verify hosted map behavior.
+- Document dataset provenance, cleaning steps, and field limitations.
+- Add a reproducible smoke check for each scene.
 
 ---
 
 # Contributing
-
 Open an issue or submit a focused pull request. Include the affected scene, browser version, reproduction steps, and a screenshot or console error when reporting a display problem.
 
 # License and Data Attribution
-
 No `LICENSE` file or explicit source license is included in the supplied archive. Before redistributing the code, dataset, video, or logo, confirm their respective origins and permissions. The coordinate helper in `utils.js` links to a Google country-coordinate sample as attribution for that resource.
 
 ---
